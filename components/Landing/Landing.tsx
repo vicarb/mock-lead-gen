@@ -1,4 +1,5 @@
 import React from 'react';
+import Products from '../Products/Products';
 
 export default function Landing() {
   const businessName = 'John\'s Bakery';
@@ -8,6 +9,22 @@ export default function Landing() {
     address: '123 Main St, Springfield',
     phone: '123-456-7890',
   };
+
+  const products = [
+    {
+      title: 'Fresh Baguette',
+      description: 'Crusty and delicious',
+      price: '$3.00',
+      image: 'path/to/image1.jpg'
+    },
+    {
+      title: 'Whole Wheat Bread',
+      description: 'Healthy and hearty',
+      price: '$4.00',
+      image: 'path/to/image2.jpg'
+    },
+    // ... more products
+  ];
   const whatsappLink = `https://wa.me/${contact.phone.replace(/-/g, '')}`;
 
   return (
@@ -28,6 +45,9 @@ export default function Landing() {
         <p className="text-lg text-gray-600">Phone: {contact.phone}</p>
       </section>
 
+      <section className=" text-center mb-8">
+      <Products products={products}/>
+      </section>
       <section className="text-center mb-8">
         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600">
           Chat with us on WhatsApp
