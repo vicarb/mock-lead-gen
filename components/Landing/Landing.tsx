@@ -7,7 +7,7 @@ export default function Landing() {
   const aboutText = 'We have been serving the community with the freshest bread since 1990.';
   const contact = {
     address: '123 Main St, Springfield',
-    phone: '123-456-7890',
+    phone: '+56-96596-2717',
   };
 
   const products = [
@@ -15,13 +15,13 @@ export default function Landing() {
       title: 'Fresh Baguette',
       description: 'Crusty and delicious',
       price: '$3.00',
-      image: 'path/to/image1.jpg'
+      image: 'burger.jpg'
     },
     {
       title: 'Whole Wheat Bread',
       description: 'Healthy and hearty',
       price: '$4.00',
-      image: 'path/to/image2.jpg'
+      image: 'burgis.jpg'
     },
     // ... more products
   ];
