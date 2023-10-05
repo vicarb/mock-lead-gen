@@ -1,6 +1,7 @@
 // Landing.js
 import React from 'react';
 import Products from '../Products/Products';
+import BusinessPresentation from '../BusinessPresentation/BusinessPresentation';
 
 export default function Landing() {
   const businessName = 'The Brew Corner';
@@ -36,7 +37,11 @@ export default function Landing() {
 
   return (
     <div className="max-w-screen-md mx-auto p-6">
-      {/* ... other sections remain unchanged ... */}
+    <BusinessPresentation 
+    businessName={businessName}
+    tagline={tagline}
+    aboutText={aboutText}
+  />
 
       <section className="text-center mb-8">
         <Products products={products} />
