@@ -1,7 +1,17 @@
-// Products.js
-import React from 'react';
+import React, { FC } from 'react';
 
-const Products = ({ products }) => {
+interface Product {
+  title: string;
+  description: string;
+  price: string;
+  image: string;
+}
+
+interface ProductsProps {
+  products: Product[];
+}
+
+const Products: FC<ProductsProps> = ({ products }) => {
   return (
     <div>
       <h2 className="text-2xl font-semibold mb-6 text-center">Our Products</h2>

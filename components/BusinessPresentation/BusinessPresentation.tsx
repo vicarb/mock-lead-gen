@@ -1,7 +1,12 @@
-// BusinessPresentation.js
-import React from 'react';
 
-const BusinessPresentation = ({ businessName, tagline, aboutText }) => {
+import React, { FC } from 'react';
+
+interface BusinessPresentationProps {
+  businessName: string;
+  tagline: string;
+  aboutText: string;
+}
+const BusinessPresentation: FC<BusinessPresentationProps> = ({ businessName, tagline, aboutText }) => {
   return (
     <div className="bg-gray-50 dark:bg-slate-200 p-12 rounded-lg shadow-lg text-center mb-12">
       <h2 className="text-4xl font-bold mb-6">{businessName}</h2>
