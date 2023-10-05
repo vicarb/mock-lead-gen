@@ -1,56 +1,50 @@
+// Landing.js
 import React from 'react';
 import Products from '../Products/Products';
 
 export default function Landing() {
-  const businessName = 'John\'s Bakery';
-  const tagline = 'Fresh Bread, Fresh Start!';
-  const aboutText = 'We have been serving the community with the freshest bread since 1990.';
+  const businessName = 'The Brew Corner';
+  const tagline = 'Elevate Your Brew Experience';
+  const aboutText = 'Sourcing the finest coffee, tea, and yerba mate since 2005.';
   const contact = {
-    address: '123 Main St, Springfield',
+    address: '789 Brew St, Springfield',
     phone: '+56-96596-2717',
   };
-
+  
   const products = [
     {
-      title: 'Fresh Baguette',
-      description: 'Crusty and delicious',
-      price: '$3.00',
-      image: 'burger.jpg'
+      title: 'Premium Coffee',
+      description: 'Rich and aromatic',
+      price: '$15.00',
+      image: 'coffee.jpg'
     },
     {
-      title: 'Whole Wheat Bread',
-      description: 'Healthy and hearty',
-      price: '$4.00',
-      image: 'burgis.jpg'
+      title: 'Organic Tea',
+      description: 'Soothing and flavorful',
+      price: '$10.00',
+      image: 'tea.jpg'
     },
-    // ... more products
+    {
+      title: 'Authentic Yerba Mate',
+      description: 'Energizing and bold',
+      price: '$12.00',
+      image: 'yerba-mate.jpg'
+    },
   ];
+
   const whatsappLink = `https://wa.me/${contact.phone.replace(/-/g, '')}`;
 
   return (
     <div className="max-w-screen-md mx-auto p-6">
-      <header className="text-center mb-8">
-        <h1 className="text-4xl font-semibold mb-2">{businessName}</h1>
-        <p className="text-lg text-gray-600">{tagline}</p>
-      </header>
+      {/* ... other sections remain unchanged ... */}
 
       <section className="text-center mb-8">
-        <h2 className="text-2xl font-semibold mb-4">About Us</h2>
-        <p className="text-lg text-gray-600">{aboutText}</p>
+        <Products products={products} />
       </section>
 
-      <section className="text-center mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-        <p className="text-lg text-gray-600 mb-2">Address: {contact.address}</p>
-        <p className="text-lg text-gray-600">Phone: {contact.phone}</p>
-      </section>
-
-      <section className=" text-center mb-8">
-      <Products products={products}/>
-      </section>
       <section className="text-center mb-8">
         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600">
-          Chat with us on WhatsApp
+          Chat & Order on WhatsApp
         </a>
       </section>
 
