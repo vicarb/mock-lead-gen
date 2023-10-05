@@ -17,19 +17,19 @@ export default function Landing() {
       title: 'Premium Coffee',
       description: 'Rich and aromatic',
       price: '$15.00',
-      image: 'coffee.jpg'
+      image: 'coffebags.jpeg'
     },
     {
       title: 'Organic Tea',
       description: 'Soothing and flavorful',
       price: '$10.00',
-      image: 'tea.jpg'
+      image: 'tea.jpeg'
     },
     {
       title: 'Authentic Yerba Mate',
       description: 'Energizing and bold',
       price: '$12.00',
-      image: 'yerba-mate.jpg'
+      image: 'mate.jpeg'
     },
   ];
 

@@ -15,7 +15,7 @@ const BusinessPresentation: FC<BusinessPresentationProps> = ({ businessName, tag
         <p>{aboutText}</p>
       </div>
       {/* Replace with an actual image */}
-      <img src="your-image-link.jpg" alt={businessName} className="mx-auto w-1/2 rounded-lg shadow mb-6" />
+      <img src="R.jpeg" alt={businessName} className="mx-auto w-1/2 rounded-lg shadow mb-6" />
       {/* You can also use a video or a slideshow here */}
       <div className="flex justify-center space-x-4">
         {/* Replace with actual icons and links */}
