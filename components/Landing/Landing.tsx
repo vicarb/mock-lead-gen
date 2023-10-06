@@ -62,6 +62,19 @@ export default function Landing() {
    </a>
    
       </section>
+      <section className="text-center mb-8">
+      <h2 className="text-2xl font-semibold mb-4">Find Us</h2>
+      <div className="map-container">
+        <iframe
+          width="100%"
+          height="400"
+          frameborder="0"
+          style={{ border: 0 }}
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE9on3F3HwoAR9AhGJW_fL-I&key=YOUR_API_KEY"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
 
       <footer className="text-center text-gray-600">
         <p>Copyright &copy; {new Date().getFullYear()} {businessName}</p>
