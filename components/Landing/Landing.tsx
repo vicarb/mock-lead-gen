@@ -48,9 +48,10 @@ export default function Landing() {
       </section>
 
       <section className="text-center mb-8">
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600">
-          Chat & Order on WhatsApp
-        </a>
+      <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white py-3 px-8 text-lg rounded-full hover:bg-green-600 focus:ring-4 focus:ring-green-300 focus:ring-opacity-50 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+      Chat & Order on WhatsApp
+    </a>
+    
       </section>
 
       <footer className="text-center text-gray-600">
