@@ -70,7 +70,7 @@ export default function Landing() {
           height="400"
           frameborder="0"
           style={{ border: 0 }}
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE9on3F3HwoAR9AhGJW_fL-I&key=YOUR_API_KEY"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE9on3F3HwoAR9AhGJW_fL-I&key=AIzaSyDuplilaU8U4Zyz_jGxI8oBnU2ZitgM1AY"
           allowfullscreen
         ></iframe>
       </div>
