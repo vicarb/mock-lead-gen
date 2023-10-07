@@ -30,7 +30,7 @@ const Products: FC<ProductsProps> = ({ products }) => {
             <p className="text-gray-600 mb-2">{product.description}</p>
             <button 
               onClick={() => setActiveIndex(index === activeIndex ? null : index)} 
-              className="bg-blue-500 hover:bg-blue-600 text-white py-1 px-4 rounded transition duration-300">
+              className="bg-green-500 text-white py-1 px-4 rounded-full hover:bg-green-600 shadow hover:shadow-md transition duration-300">
                 {activeIndex === index ? 'Hide Details' : 'Show Details'}
             </button>
             <div className={`mt-4 transition duration-500 ${activeIndex === index ? 'opacity-100 h-auto visible' : 'opacity-0 h-0 invisible'}`}>
