@@ -2,7 +2,7 @@
 import React from 'react';
 import Products from '../Products/Products';
 import BusinessPresentation from '../BusinessPresentation/BusinessPresentation';
-
+import BusinessInquiry from '../BusinessInquiry/BusinessInquiry';
 export default function Landing() {
   const businessName = 'The Brew Corner';
   const tagline = 'Elevate Your Brew Experience';
@@ -75,6 +75,7 @@ export default function Landing() {
         ></iframe>
       </div>
     </section>
+    <BusinessInquiry/>
 
       <footer className="text-center text-gray-600">
         <p>Copyright &copy; {new Date().getFullYear()} {businessName}</p>
