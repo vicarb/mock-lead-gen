@@ -14,7 +14,8 @@ interface ProductsProps {
 }
 
 const Products: FC<ProductsProps> = ({ products }) => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
 
   return (
     <div className="max-w-screen-md mx-auto p-6">
