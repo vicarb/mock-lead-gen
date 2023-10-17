@@ -9,7 +9,7 @@ interface BusinessPresentationProps {
 const BusinessPresentation: FC<BusinessPresentationProps> = ({ businessName, tagline, aboutText }) => {
   return (
     <div className="bg-gray-50 dark:bg-slate-200 p-12 rounded-lg shadow-lg text-center mb-12">
-      <h2 className="text-4xl font-bold mb-6">{businessName}</h2>
+      <h2 className="text-4xl font-bold mb-6 text-slate-800">{businessName}</h2>
       <h3 className="text-2xl text-gray-600 italic mb-6">{tagline}</h3>
       <div className="text-lg text-gray-600 mb-6">
         <p>{aboutText}</p>
