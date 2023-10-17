@@ -53,7 +53,7 @@ export default function Landing() {
       rel="noopener noreferrer" 
       className="inline-flex items-center justify-center bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white py-3 px-8 text-lg rounded-full hover:from-green-500 hover:via-green-600 hover:to-green-700 focus:ring-4 focus:ring-green-300 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 shadow-lg hover:shadow-xl"
    >
-     <span className="mr-2">
+     <span className="mr-2 font-medium">
        Chat & Order
      </span>
      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
