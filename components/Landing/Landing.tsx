@@ -36,7 +36,7 @@ export default function Landing() {
   const whatsappLink = `https://wa.me/${contact.phone.replace(/-/g, '')}`;
 
   return (
-    <div className="max-w-screen-md mx-auto p-6">
+    <div className="max-w-screen-md mx-auto p-6 ">
     <BusinessPresentation 
     businessName={businessName}
     tagline={tagline}
