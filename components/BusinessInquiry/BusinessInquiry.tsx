@@ -8,7 +8,7 @@ const BusinessInquiry = () => {
   };
 
   return (
-    <section className="text-center mb-8 bg-slate-200 m-8 rounded-md p-8">
+    <section className="text-center mb-8 bg-slate-200 md:m-8 rounded-md md:p-8">
       <h2 className="text-2xl font-semibold mb-4">Business Inquiries</h2>
       <form id="businessInquiryForm" >
         <div className="mb-4">
