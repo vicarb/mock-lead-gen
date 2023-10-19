@@ -22,7 +22,7 @@ const Products: FC<ProductsProps> = ({ products }) => {
       <h2 className="text-3xl font-semibold mb-6 text-center ">Our Products</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product, index) => (
-          <div key={index} className="border rounded-lg p-4 hover:shadow-lg transition relative">
+          <div key={index} className="border rounded-lg p-4 hover:shadow-lg hover:bg-slate-100 transition relative">
             <img src={product.image} alt={product.title} className="w-full h-40 object-cover rounded mb-4" />
             <div className="flex justify-between items-center">
               <h3 className="text-lg font-semibold">{product.title}</h3>
